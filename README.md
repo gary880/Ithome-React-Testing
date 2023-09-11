@@ -1,11 +1,27 @@
-# React + TypeScript + Vite
+# Ithome 2023 鐵人賽
+[React Clean Code And Unit Tests - 利用測試寫出人類看得懂的React程式 ](https://ithelp.ithome.com.tw/users/20161792/ironman/5966)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 專案設定
+環境 & 使用套件
+
+   - react + TypeScript
+   - vite
+   - jest
+   - React Testing Library
+   - axios
+
+安裝
+```
+   npm install
+```
+
+測試
+```
+   npm run test
+```
+
 
 ## Expanding the ESLint configuration
 
