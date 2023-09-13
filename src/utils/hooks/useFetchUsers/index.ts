@@ -8,11 +8,13 @@ interface User {
 
 function useFetchUsers() {
     const [users, setUsers] = useState<User[]>([]);
+    const [loading, setLoading] = useState<boolean>(true);
 
     const fetchUsers = async () => {
         try {
             const result = await axios.get<User[]>('https://jsonplaceholder.typicode.com/users');
             setUsers(result.data);
+            setLoading(false);
         } catch (error) {
             console.log(error);
         }
@@ -22,7 +24,7 @@ function useFetchUsers() {
         fetchUsers();
     }, []);
 
-    return users;
+    return {users, loading};
 }
 
 export default useFetchUsers;

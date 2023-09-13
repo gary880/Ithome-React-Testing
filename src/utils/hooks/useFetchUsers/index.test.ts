@@ -16,7 +16,7 @@ describe('測試 useFetchUsers', () => {
 
         const hook = renderHook(() => useFetchUsers());
         await waitFor(() => {
-            expect(hook.result.current).toEqual([
+            expect(hook.result.current.users).toEqual([
                 { id: '1', username: 'Dylan' },
                 { id: '2', username: 'John' },
             ]);
@@ -29,7 +29,7 @@ describe('測試 useFetchUsers', () => {
 
         const hook = renderHook(() => useFetchUsers());
         await waitFor(() => {
-            expect(hook.result.current).toEqual([]);
+            expect(hook.result.current.users).toEqual([]);
         });
     }
     );
